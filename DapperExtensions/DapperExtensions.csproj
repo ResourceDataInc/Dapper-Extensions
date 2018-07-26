@@ -2,15 +2,33 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <RootNamespace>DapperExtensions</RootNamespace>
-    <AssemblyName>DapperExtensions</AssemblyName>
+    <AssemblyName>DapperExtensionsNetStandard20</AssemblyName>
     <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
     <RestorePackages>true</RestorePackages>
-
+    <Version>1.6.3-standard</Version>
+    <Authors>Thad Smith, Page Brooks, Patrick Anderson</Authors>
+    <Owners>Thad Smith, Page Brooks</Owners>
+    <Description>A small library that complements Dapper by adding basic CRUD operations (Get, Insert, Update, Delete) for your POCOs. For more advanced querying scenarios, Dapper Extensions provides a predicate system.</Description>
+    <LicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</LicenseUrl>
+    <ProjectUrl>https://github.com/ResourceDataInc/Dapper-Extensions</ProjectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <Tags>orm;sql;micro-orm;Data;Dapper</Tags>
+    <ReleaseNotes>
+      1.6.3-standard
+      * Updated build and dependencies to be net standard 2.0 framework compatable
+      1.6.2 / 1.6.3
+      * Exposed Ignore keys on update in usages of Implementor
+      1.6.1
+      * Added Oracle Dialect to 4.5
+      1.6.0
+      * Added DB2 Dialect
+      * Added flag to ignore All Key fields when doing an update
+      * Added missing async/await methods
+      * Added unmap method to Mapper
+    </ReleaseNotes>
     <AssemblyTitle>DapperExtensions</AssemblyTitle>
     <AssemblyProduct>DapperExtensions</AssemblyProduct>
     <AssemblyCopyright>Copyright © 2012</AssemblyCopyright>
-    <InternalsVisibleTo>DapperExtensions.Test</InternalsVisibleTo>
-    <InternalsVisibleTo>DapperExtensions.Test.SQLite</InternalsVisibleTo>
     <AssemblyVersion>1.6.3.0</AssemblyVersion>
     <AssemblyFileVersion>1.6.3.0</AssemblyFileVersion>
     <AssemblyInformationalVersion>1.6.3</AssemblyInformationalVersion>
