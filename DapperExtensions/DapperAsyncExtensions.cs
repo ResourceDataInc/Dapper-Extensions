@@ -10,7 +10,7 @@ namespace DapperExtensions
 {
     public static class DapperAsyncExtensions
     {
-        private readonly static object _lock = new object();
+        private static readonly object _lock = new object();
 
         private static Func<IDapperExtensionsConfiguration, IDapperAsyncImplementor> _instanceFactory;
         private static IDapperAsyncImplementor _instance;

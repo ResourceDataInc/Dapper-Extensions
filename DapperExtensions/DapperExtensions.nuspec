@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata schemaVersion="2">
-    <id>DapperExtensions</id>
+    <id>DapperExtensionsStandard</id>
     <version>1.6.3</version>
-    <authors>Thad Smith, Page Brooks</authors>
+    <authors>Thad Smith, Page Brooks, Patrick Anderson</authors>
     <owners>Thad Smith, Page Brooks</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/tmsmith/Dapper-Extensions</projectUrl>
@@ -23,7 +23,7 @@
     </releaseNotes>
     <tags>orm sql micro-orm Data Dapper</tags>
 	<dependencies>
-      <dependency id="Dapper" version="1.12" />
+      <dependency id="Dapper" version="1.50.2" />
     </dependencies>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Core"/>
@@ -33,6 +33,7 @@
     </frameworkAssemblies>
   </metadata>
   <files>
+    <file src="lib\**" target="lib/{framework name}[{version}]" />
   	<file src="bin\Release\DapperExtensions.dll" target="lib\net40" />
     <file src="bin\Release\DapperExtensions.pdb" target="lib\net40" />
 
